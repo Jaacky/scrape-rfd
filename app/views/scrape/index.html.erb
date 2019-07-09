@@ -1,0 +1,11 @@
+<h1>Scrape#index</h1>
+<p>Find me in app/views/scrape/index.html.erb</p>
+
+<% @deals.each do |deal|%>
+    <h2>
+        <% if deal[:retailer] %>
+            <%= deal[:retailer] + ' // '%>
+        <% end %>
+        <%= deal[:text] %>
+    </h2>
+<% end %>

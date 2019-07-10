@@ -6,6 +6,6 @@
         <% if deal[:retailer] %>
             <%= deal[:retailer] + ' // '%>
         <% end %>
-        <%= deal[:text] %>
+        <a href="<%= deal[:forum_link] %>"><%= deal[:text] %></a>
     </h2>
 <% end %>
